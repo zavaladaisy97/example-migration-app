@@ -6,7 +6,7 @@ class MakeChangesToBooks < ActiveRecord::Migration[7.0]
     # change a column type - tbl, column, new type
     change_column :books, :description, :text
 
-    # change price column form integer to decimal - tbl, column, new type, modifiers
+    # change price column form integer to decimal - tbl, column, new type, modifiers(key/value pairs)
     change_column :books, :price, :decimal, precision: 5, scale: 2
     
     # remove a column - tbl, column, type
